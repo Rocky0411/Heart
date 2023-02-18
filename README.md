@@ -1,7 +1,5 @@
 # Heart
 Đếm ngày yêu
-![Hminh](https://user-images.githubusercontent.com/125713944/219829260-af5b68b6-ca23-4e5a-8e48-38ca1946ea89.jpg)
-![Mia](https://user-images.githubusercontent.com/125713944/219829269-2d3bce6d-ab0b-4c8b-80c7-5b36681e355b.jpg)
 const yourDate = new Date("2022-11-18T20:00:00"),
 music = ['ido'];
 
@@ -9,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function(){
       var rootTime = document.querySelector("time");
 
       document.querySelector("anni").textContent = `${(yourDate.getDate()>9)?yourDate.getDate():"0"+yourDate.getDate()}-${(yourDate.getMonth()>8)?(yourDate.getMonth()+1):"0"+(yourDate.getMonth()+1)}-${yourDate.getFullYear()}`;
-      
+
       document.querySelector("date").textContent = Math.floor( Math.floor((new Date() - yourDate) / 1000) / 60 / 60 / 24)+" DAYS";
 
       function olock() {
@@ -28,6 +26,9 @@ document.addEventListener('DOMContentLoaded', function(){
       );
 
 }, false);
+Heart/img/Hminh.jpg
+Heart/img/Mia.jpg 
+Heart/index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,7 +49,7 @@ document.addEventListener('DOMContentLoaded', function(){
                        <time>00:00:00</time>
                   </div>
             </div>
-            
+
             <div id="info">
                   <div class="one">
                         <img src="img/Mia.jpg" class="avt">
@@ -62,16 +63,17 @@ document.addEventListener('DOMContentLoaded', function(){
                         <p>LHMinh</p>
                   </div>
             </div>
-            
+
             <div id="music">
                   <audio loop autoplay controls>Your browser does not support the audio element.</audio>
             </div>
             <footer>Thank you for your love 💕</footer>
       </div> 
-      
+
       <script src="app.js"></script>
 </body>
 </html>
+Heart/style.css
 html, body {
       background-color: #f6f6f6;
       margin: 0;
